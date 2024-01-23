@@ -14,6 +14,20 @@
         font-size: 50px;
       } */
 
+      p::after {
+        content: " this is extra content";
+        color: red;
+      }
+
+      p::before {
+        content: "this is added before ";
+        color: green;
+      }
+
+      .target::selection {
+        color: yellow;
+      }
+
       a[target="_blank"] {
         border: 1px solid blue;
       }
@@ -33,6 +47,9 @@
       p {
         color: blue /*!important*/;
       }
+      ::marker {
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -41,11 +58,19 @@
     <a href="index.html">index</a>
     <img src="falsa" alt="flower" />
     <h1>Pseudo Elemente</h1>
-    <p class="paragraph3" id="paragraph2" style="color: red">
+    <!-- <p class="paragraph3" id="paragraph2" style="color: red">
       This is paragraph 1
     </p>
     <p id="paragraph2">This is paragraph 2</p>
-    <p class="paragraph3" id="paragraph2">This is paragraph 3</p>
-    <p>This is paragraph 4</p>
+    <p class="paragraph3" id="paragraph2">This is paragraph 3</p> -->
+    <p class="target">This is paragraph</p>
+    <ol>
+      <li>sare</li>
+      <li>zahar</li>
+      <li>faina</li>
+      <li>unt</li>
+      <li>ciocolata</li>
+      <div style="display: list-item">piept de pui</div>
+    </ol>
   </body>
 </html>
