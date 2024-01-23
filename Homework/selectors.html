@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+
+body {
+    background-color: bisque;
+}
+        h1:hover {
+            font-size: 50px;
+            transition: 1s;
+        }
+        a:hover {
+            background-color: red
+        }
+
+        a:visited {
+            color: green
+        }
+
+        p:first-child {
+            font-size: x-large;
+            color:goldenrod
+        }
+        
+        p:nth-child(2) {
+            font-weight: bold;
+            color:blue;
+        }  /* prioritate >>> selectori *,^,$,|   */
+
+        label {
+            display: block; 
+            margin-bottom: 1px; 
+        }
+
+        .inputs {
+          position:absolute;
+          right:0;
+          top:0;
+          border: 2px solid black;
+          background-color:orangered;
+        }
+
+        p:only-of-type {
+            font-size:50px;
+        }
+
+        input:required {
+            padding: 5px;
+        }
+
+        a:link {
+            font-family: monospace;
+        }
+
+       [class|="paragraph"] {
+        background-color: aqua;
+       }
+
+       [class^="mid"] {
+        background-color: yellowgreen;
+       }
+
+       [class*="para"] {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:blueviolet
+       }
+
+       [class$="end"] {
+        font-size:40px;
+        color:brown;
+        font-weight: bold;
+       }
+
+       .first {
+        border: 2px dashed red;
+        background-color: grey;
+       } 
+
+       .second {
+        border: 2px solid green;
+        background-color:red;
+       }
+       
+       .third {
+        border :1px dotted darkgreen;
+        background-color: blueviolet;
+       }
+       .fourth {
+        border :5px dotted pink;
+        background-color: orangered;
+       }
+       .fifth {
+        border :2px solid red;
+        background-color: blueviolet;
+       }
+       .sixth {
+        border :1px dotted blue;
+        background-color: black;
+       }
+       
+
+
+    </style>
+    
+    <title>Selectors</title>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <div class="inputs">
+        <label for="fname">First Name</label>
+        <input  type="text" id="fname" name="fname" placeholder="Ciprian" required autofocus>
+        <br>
+        <label for="lname"> Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Păvăleanu" required>
+        <input type="submit" name="submit" id="submit">
+        <br>
+        <input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+
+    </div>
+
+    <div class="first">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, earum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magni.</p>
+        <a href="newPage.html" target="_self">fakeLink</a>
+        <a href="newPage2.html" target="_self">fakeLink 2</a>
+    </div>
+    <div class="second">
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, tempora. </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, saepe.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, possimus.</p>
+    </div>
+    <div class="third">
+        
+           <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, unde.
+            </p>
+             
+        
+    </div>
+    <div class="fourth">
+        <p class=" first-paragraph">Lorem ipsum dolor sit amet.</p>
+        <p class="2nd">Lorem ipsum dolor sit amet.</p>
+        <p class="paragraph-3rd">Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+    <div class="fifth">
+        <p class ="mid">Lorem ipsum dolor sit amet.</p>
+        <p class ="midparagraph">Lorem ipsum dolor sit amet.</p>
+        <p class ="mid-paragraph">Lorem ipsum dolor sit amet.</p>
+        <p class ="paragraph-mid">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="sixth">
+        <p class="end">Lorem ipsum dolor sit amet.</p>
+        <p class="2nd-end">Lorem ipsum dolor sit amet.</p>
+        <p class="end-3rd">Lorem ipsum dolor sit amet.</p>
+        <p class="4thend">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
